@@ -6,15 +6,15 @@
 }
 
 :root {
-  --accent: #D78189;
-  --accent-light: #c0555f;
-  --bg: #FBFAFA;
-  --bg2: #F3F1F1;
-  --bg3: #FEECEA;
-  --text: #323232;
-  --text-muted: #888888;
+  --accent: #75A4B8;        /* くすみブルー（ボタン・下線） */
+  --accent-light: #4B6169;  /* スレートブルー（見出し・ロゴ） */
+  --bg: #FAFAFA;            /* ほぼ白（メイン背景） */
+  --bg2: #FADCE0;           /* くすみピンク（セクション背景・大ブロック） */
+  --bg3: #FEECEA;           /* ブラッシュ（フォーム・カード内） */
+  --text: #4B6169;          /* スレートブルーグレー（本文） */
+  --text-muted: #9a9090;    /* ミュートグレー */
   --card-bg: #FFFFFF;
-  --border: #E4DCDC;
+  --border: #E8DEDE;
   --radius: 12px;
   --transition: 0.3s ease;
 }
@@ -119,7 +119,7 @@ ul {
 .hero-name {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #323232 0%, #D78189 100%);
+  background: linear-gradient(135deg, #4B6169 0%, #75A4B8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -156,13 +156,13 @@ ul {
   border: none;
   cursor: pointer;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-  box-shadow: 0 4px 20px rgba(215, 129, 137, 0.35);
+  box-shadow: 0 4px 20px rgba(117, 164, 184, 0.3);
 }
 
 .btn:hover {
-  background: #c96a74;
+  background: #5a8fa3;
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(215, 129, 137, 0.5);
+  box-shadow: 0 8px 28px rgba(117, 164, 184, 0.45);
 }
 
 /* ===== セクション共通 ===== */
@@ -342,12 +342,12 @@ ul {
 }
 
 .work-tags span {
-  background: rgba(215, 129, 137, 0.12);
-  color: #c0555f;
+  background: rgba(117, 164, 184, 0.12);
+  color: #4B6169;
   font-size: 0.78rem;
   padding: 3px 10px;
   border-radius: 20px;
-  border: 1px solid rgba(215, 129, 137, 0.3);
+  border: 1px solid rgba(117, 164, 184, 0.35);
 }
 
 .work-link {
