@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" aria-label="メニュー">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-sub">Hello, I'm</p>
+      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-desc">Web Developer / Designer</p>
+      <a href="#works" class="btn">作品を見る</a>
+    </div>
+    <div class="hero-shape"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-img">
+          <div class="avatar-placeholder">👤</div>
+        </div>
+        <div class="about-text">
+          <h3>はじめまして！</h3>
+          <p>
+            ここに自己紹介を書いてください。どんな人物か、何に興味があるか、
+            どんなことを大切にしているかなど、あなたらしい言葉で伝えましょう。
+          </p>
+          <p>
+            趣味や経歴、目指していることなども加えると、
+            訪問者がより親しみを感じやすくなります。
+          </p>
+          <div class="about-info">
+            <span>📍 東京</span>
+            <span>🎓 ○○大学</span>
+            <span>💼 フリーランス</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>フロントエンド</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>バックエンド</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>デザイン</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>ツール</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>VS Code</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section works">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-thumb work-thumb-1"></div>
+          <div class="work-info">
+            <h3>プロジェクト名 1</h3>
+            <p>プロジェクトの概要を2〜3行で説明します。どんな技術を使ったか、何を解決したかを書きましょう。</p>
+            <div class="work-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="#" class="work-link">詳細を見る →</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb work-thumb-2"></div>
+          <div class="work-info">
+            <h3>プロジェクト名 2</h3>
+            <p>プロジェクトの概要を2〜3行で説明します。どんな技術を使ったか、何を解決したかを書きましょう。</p>
+            <div class="work-tags">
+              <span>React</span><span>Node.js</span>
+            </div>
+            <a href="#" class="work-link">詳細を見る →</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb work-thumb-3"></div>
+          <div class="work-info">
+            <h3>プロジェクト名 3</h3>
+            <p>プロジェクトの概要を2〜3行で説明します。どんな技術を使ったか、何を解決したかを書きましょう。</p>
+            <div class="work-tags">
+              <span>Python</span><span>API</span>
+            </div>
+            <a href="#" class="work-link">詳細を見る →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-desc">お気軽にご連絡ください。お仕事のご依頼やご質問をお待ちしています。</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="5" placeholder="メッセージを入力してください..." required></textarea>
+        </div>
+        <button type="submit" class="btn">送信する</button>
+      </form>
+      <div class="social-links">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
